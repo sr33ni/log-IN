@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <title>studentlogin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="studin.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head> 
+   <table class="position">
+      <tr>
+        <td>
+        	<h1> Students Login</h1>
+            <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                <div>
+                    <label class="pos">Reg NO:</label><label class="validation-error hide" id="regNoValidationError">*</label>
+                        <input type="text" name="regNo" id="regNo">
+                    </div>
+                    <div>
+                        <label class="pos">Password</label>
+                        <input type="password" name="passWord" id="passWord">
+                    </div>
+                    
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Login">
+                    </div>
+                    <div>
+                    	<a href="#" class="pos1">forgot password..?</a>
+                    </div>
+                </form>
+         </td>
+    
+
+    			<td>
+                <table class="list" id="dataList">
+                    <thead>
+                        <tr>
+                            <th>Reg NO:</th>
+                            <th>Password</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+<script src="studin.js"></script>
+<body>
